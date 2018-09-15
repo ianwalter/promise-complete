@@ -32,5 +32,5 @@ results.filter(r => r instanceof Error).forEach(e => console.error(e))
 
 ISC &copy; [Ian Walter](https://iankwalter.com)
 
-[npm-image]: https://img.shields.io/npm/v/promise-complete.svg
-[npm-url]: https://www.npmjs.com/package/promise-complete
+[npm-image]: https://img.shields.io/npm/v/@ianwalter/promise-complete.svg
+[npm-url]: https://www.npmjs.com/package/@ianwalter/promise-complete
