@@ -1,0 +1,28 @@
+{
+  "name": "promise-complete",
+  "version": "1.0.0",
+  "description": "Call all promises in an array whether they resolve or reject",
+  "main": "dist/promise-complete.js",
+  "umd:main": "dist/promise-complete.umd.js",
+  "module": "dist/promise-complete.m.js",
+  "scripts": {
+    "build": "microbundle build index.js --compress false",
+    "watch": "microbundle watch index.js --compress false",
+    "test": "npm run build && jest"
+  },
+  "keywords": [
+    "promise",
+    "complete",
+    "all",
+    "every",
+    "continue",
+    "Promise.all"
+  ],
+  "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "microbundle": "^0.6.0",
+    "np": "^3.0.4"
+  }
+}
