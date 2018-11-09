@@ -28,9 +28,13 @@ const results = await Promise.complete([promise1, promise2])
 results.filter(r => r instanceof Error).forEach(e => console.error(e))
 ```
 
+## License
+
+Apache 2.0 with Commons Clause - See [LICENSE](https://github.com/ianwalter/promise-complete/blob/master/LICENSE)
+
 &nbsp;
 
-ISC &copy; [Ian Walter](https://iankwalter.com)
+Created by [Ian Walter](https://iankwalter.com)
 
 [npm-image]: https://img.shields.io/npm/v/@ianwalter/promise-complete.svg
 [npm-url]: https://www.npmjs.com/package/@ianwalter/promise-complete
