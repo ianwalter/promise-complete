@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "Call all promises in an array whether they resolve or reject",
   "main": "dist/promise-complete.js",
-  "umd:main": "dist/promise-complete.umd.js",
   "module": "dist/promise-complete.m.js",
+  "iife": "dist/promise-complete.iife.js",
   "scripts": {
-    "build": "microbundle build index.js --compress false",
-    "watch": "microbundle watch index.js --compress false",
-    "test": "npm run build && jest",
-    "lint": "eslint --ext js index.js tests"
+    "lint": "eslint index.js tests",
+    "pretest": "dist",
+    "test": "ava"
   },
   "keywords": [
     "promise",
@@ -20,29 +19,22 @@
     "Promise.all"
   ],
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
-  "license": "Apache 2.0 with Commons Clause",
+  "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
+    "@ianwalter/dist": "^1.1.1",
+    "ava": "^1.0.1",
     "eslint": "^5.8.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-jest": "^22.0.0",
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "jest": "^23.6.0",
-    "microbundle": "^0.9.0",
     "np": "^3.0.4"
   },
   "eslintConfig": {
     "root": true,
-    "env": {
-      "jest/globals": true
-    },
     "extends": [
       "standard"
-    ],
-    "plugins": [
-      "jest"
     ]
   }
 }

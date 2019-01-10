@@ -30,7 +30,7 @@ results.filter(r => r instanceof Error).forEach(e => console.error(e))
 
 ## License
 
-Apache 2.0 with Commons Clause - See [LICENSE](https://github.com/ianwalter/promise-complete/blob/master/LICENSE)
+Apache 2.0 with Commons Clause - See [LICENSE][licenseUrl]
 
 &nbsp;
 
@@ -38,3 +38,4 @@ Created by [Ian Walter](https://iankwalter.com)
 
 [npm-image]: https://img.shields.io/npm/v/@ianwalter/promise-complete.svg
 [npm-url]: https://www.npmjs.com/package/@ianwalter/promise-complete
+[licenseUrl]: https://github.com/ianwalter/promise-complete/blob/master/LICENSE
