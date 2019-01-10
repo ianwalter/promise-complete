@@ -6,7 +6,7 @@
   "module": "dist/promise-complete.m.js",
   "iife": "dist/promise-complete.iife.js",
   "scripts": {
-    "lint": "eslint index.js tests",
+    "lint": "eslint index.js test.js",
     "pretest": "dist",
     "test": "ava"
   },
