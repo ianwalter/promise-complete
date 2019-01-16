@@ -1,6 +1,6 @@
 {
   "name": "@ianwalter/promise-complete",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Call all promises in an array whether they resolve or reject",
   "main": "dist/promise-complete.js",
   "module": "dist/promise-complete.m.js",
