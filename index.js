@@ -1,8 +1,7 @@
 export default function promiseComplete (input) {
   const output = Array.isArray(input) ? [] : {}
-  const inputLength = Array.isArray(input)
-    ? input.length
-    : Object.keys(input).length
+  const isArray = Array.isArray(input)
+  const inputLength = isArray ? input.length : Object.keys(input).length
   return new Promise(resolve => {
     const addResult = key => value => {
       output[key] = value
@@ -13,9 +12,16 @@ export default function promiseComplete (input) {
         resolve(output)
       }
     }
-    for (const [key, promise] of Object.entries(input)) {
+    const entries = isArray
+      ? input.map((value, index) => [index, value])
+      : Object.keys(input).map(key => [key, input[key]])
+    for (const [key, promise] of entries) {
       const handler = addResult(key)
-      promise.then(handler, handler)
+      if (promise.then) {
+        promise.then(handler, handler)
+      } else {
+        handler(promise)
+      }
     }
   })
 }

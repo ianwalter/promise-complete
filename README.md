@@ -1,7 +1,7 @@
 # @ianwalter/promise-complete
 > Call all promises in an array whether they resolve or reject
 
-[![Npm page][npm-image]][npm-url]
+[![Npm page][npmImage]][npmUrl]
 
 ## About
 
@@ -9,11 +9,12 @@ This is exactly like `Promise.all` except that it won't reject and stop promises
 from being called. Resolve and rejection values are returned in the results
 array in the same order as the promises were given so you can iterate over the
 array and check/handle errors after all of the promises have resolved/rejected.
+`promise-complete` also accepts a map (Object) and non-promise values as input.
 
 ## Installation
 
 ```console
-npm install --save promise-complete
+yarn add @ianwalter/promise-complete
 ```
 
 ## Usage
@@ -36,6 +37,6 @@ Apache 2.0 with Commons Clause - See [LICENSE][licenseUrl]
 
 Created by [Ian Walter](https://iankwalter.com)
 
-[npm-image]: https://img.shields.io/npm/v/@ianwalter/promise-complete.svg
-[npm-url]: https://www.npmjs.com/package/@ianwalter/promise-complete
+[npmImage]: https://img.shields.io/npm/v/@ianwalter/promise-complete.svg
+[npmUrl]: https://www.npmjs.com/package/@ianwalter/promise-complete
 [licenseUrl]: https://github.com/ianwalter/promise-complete/blob/master/LICENSE

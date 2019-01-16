@@ -18,3 +18,11 @@ test('accepts a map of promises and returns a result map', async t => {
   const result = await complete({ p1, p2 })
   t.deepEqual(result, { p1: singer, p2: error })
 })
+
+test('accepts mixed (non-promise) input', async t => {
+  const band = 'Little Dragon'
+  const error = new Error('Something went wrong!')
+  const p1 = Promise.resolve(band)
+  const result = await complete({ p1, p2: error })
+  t.deepEqual(result, { p1: band, p2: error })
+})
