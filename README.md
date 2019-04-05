@@ -3,6 +3,13 @@
 
 [![Npm page][npmImage]][npmUrl]
 
+## Archived
+
+I'm archiving this module since this functionality will soon be native to
+JavaScript when the [`Promise.allSettled`][allSettledUrl] proposal is added.
+Until then, you can also use the [`p-settle`][pSettleUrl] module from
+**@sindresorhus**.
+
 ## About
 
 This is exactly like `Promise.all` except that it won't reject and stop promises
@@ -39,4 +46,6 @@ Created by [Ian Walter](https://iankwalter.com)
 
 [npmImage]: https://img.shields.io/npm/v/@ianwalter/promise-complete.svg
 [npmUrl]: https://www.npmjs.com/package/@ianwalter/promise-complete
+[allSettledUrl]: https://github.com/tc39/proposal-promise-allSettled
+[pSettleUrl]: https://github.com/sindresorhus/p-settle
 [licenseUrl]: https://github.com/ianwalter/promise-complete/blob/master/LICENSE
